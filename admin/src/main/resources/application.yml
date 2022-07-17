@@ -1,0 +1,65 @@
+spring:
+  application:
+    name: admin
+  profiles:
+    active: dev #默认为开发环境
+  servlet:
+    multipart:
+      enabled: true #开启文件上传
+      max-file-size: 10MB #限制文件上传大小为10M
+  port:
+    8080
+
+
+
+mybatis:
+  mapper-locations:
+    - classpath:dao/*.xml
+    - classpath*:com/**/mapper/*.xml
+
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  secret: mall-admin-secret #JWT加解密使用的密钥
+  expiration: 604800 #JWT的超期限时间(60*60*24*7)
+  tokenHead: 'Bearer '  #JWT负载中拿到开头
+redis:
+  database: mall
+  key:
+    admin: 'ums:admin'
+    resourceList: 'ums:resourceList'
+  expire:
+    common: 86400 # 24 hours
+
+swagger:
+  enabled: true
+
+secure:
+  ignored:
+    urls:
+      - /test/**
+      - /admin/login
+      - /admin/register
+      - /admin/info
+      - /admin/logout
+      - /swagger-ui.html
+      - /swagger-resources/**
+      - /swagger/**
+      - /**/v2/api-docs
+      - /**/*.js
+      - /**/*.css
+      - /**/*.png
+      - /**/*.ico
+      - /webjars/springfox-swagger-ui/**
+
+aliyun:
+  oss:
+    endpoint: oss-cn-hangzhou.aliyuncs.com    # oss对外服务的访问域名
+    accessKeyId:  # 访问身份验证中用到用户标识
+    accessKeySecret:  # 用户用于加密签名字符串和oss用来验证签名字符串的密钥
+    bucketName: douxiaolong-oss # oss的存储空间
+    policy:
+      expire: 300 # 签名有效期(S)
+    maxSize: 10 # 上传文件大小(M)
+    callback:  # 文件上传成功后的回调地址
+    dir:
+      prefix: douxiaolong_mall/images/ # 上传文件夹路径前缀

@@ -1,0 +1,24 @@
+2022-04-25 10:41:19 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field skuStockService in com.dxl.mall.controller.PmsSkuStockController required a bean of type 'com.dxl.mall.service.PmsSkuStockService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.dxl.mall.service.PmsSkuStockService' in your configuration.
+
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 104225
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 105167
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 105199
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 105234
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 105268
+2022-04-25 10:47:53 [http-nio-8080-exec-7] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 217485

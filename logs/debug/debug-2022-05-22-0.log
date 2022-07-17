@@ -1,0 +1,551 @@
+2022-05-22 17:06:48 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 1708 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-22 17:06:48 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-22 17:06:48 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-22 17:06:51 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-22 17:06:51 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-22 17:06:51 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 40ms. Found 0 Redis repository interfaces.
+2022-05-22 17:06:51 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1e236278' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:06:51 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:06:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-22 17:06:51 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-22 17:06:51 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-22 17:06:51 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-22 17:06:51 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 3144 ms
+2022-05-22 17:06:52 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-22 17:06:53 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-22 17:06:54 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-22 17:06:54 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-22 17:06:55 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@523abba9, org.springframework.security.web.context.SecurityContextPersistenceFilter@553fbe94, org.springframework.security.web.header.HeaderWriterFilter@1d585fb, org.springframework.security.web.authentication.logout.LogoutFilter@5f2b9da8, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@99c4993, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f60824e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@403f7aa2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e090aaa, org.springframework.security.web.session.SessionManagementFilter@121cf6f4, org.springframework.security.web.access.ExceptionTranslationFilter@7d8f2eec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b360972]
+2022-05-22 17:06:55 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-22 17:06:55 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-22 17:06:55 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-22 17:06:55 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-22 17:06:55 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-22 17:06:55 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-22 17:06:55 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-05-22 17:06:55 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#3ef2b8e5:0/SimpleConnection@563c3aca [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 5417]
+2022-05-22 17:06:55 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 7.46 seconds (JVM running for 7.982)
+2022-05-22 17:06:56 [RMI TCP Connection(2)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 17:06:56 [RMI TCP Connection(2)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-05-22 17:06:56 [RMI TCP Connection(2)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 5 ms
+2022-05-22 17:11:58 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 1088 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-22 17:11:58 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-22 17:11:58 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-22 17:11:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-22 17:11:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-22 17:11:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2022-05-22 17:11:59 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@41a374be' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:11:59 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:12:00 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-22 17:12:00 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-22 17:12:00 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-22 17:12:00 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-22 17:12:00 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1329 ms
+2022-05-22 17:12:00 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-22 17:12:00 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-22 17:12:01 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-22 17:12:02 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-22 17:12:02 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2e85e3f1, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c7843c3, org.springframework.security.web.header.HeaderWriterFilter@1da53f4f, org.springframework.security.web.authentication.logout.LogoutFilter@655909e2, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@16bbaab3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c8f047a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6abe62bb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@195498aa, org.springframework.security.web.session.SessionManagementFilter@1d585fb, org.springframework.security.web.access.ExceptionTranslationFilter@29f95272, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@44ddb518]
+2022-05-22 17:12:02 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-22 17:12:02 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-22 17:12:02 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-22 17:12:02 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-22 17:12:02 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-22 17:12:02 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-22 17:12:02 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-05-22 17:12:02 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#22c8ee48:0/SimpleConnection@70bc3a9c [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 5566]
+2022-05-22 17:12:02 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 4.23 seconds (JVM running for 4.659)
+2022-05-22 17:12:03 [RMI TCP Connection(5)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 17:12:03 [RMI TCP Connection(5)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-05-22 17:12:03 [RMI TCP Connection(5)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms
+2022-05-22 17:19:03 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 3504 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-22 17:19:03 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-22 17:19:03 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-22 17:19:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-22 17:19:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-22 17:19:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2022-05-22 17:19:04 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@41a374be' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:19:04 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:19:04 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-22 17:19:04 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-22 17:19:04 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-22 17:19:04 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-22 17:19:04 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1453 ms
+2022-05-22 17:19:05 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-22 17:19:05 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-22 17:19:06 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-22 17:19:06 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-22 17:19:06 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@195498aa, org.springframework.security.web.context.SecurityContextPersistenceFilter@5158a9f7, org.springframework.security.web.header.HeaderWriterFilter@4e7eba9f, org.springframework.security.web.authentication.logout.LogoutFilter@716ae973, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@16bbaab3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4387d2f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f60824e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b360972, org.springframework.security.web.session.SessionManagementFilter@1884e671, org.springframework.security.web.access.ExceptionTranslationFilter@c754401, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e36bc01]
+2022-05-22 17:19:06 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-22 17:19:06 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-22 17:19:07 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-22 17:19:07 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-22 17:19:07 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-22 17:19:07 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-22 17:19:07 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-05-22 17:19:07 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#22c8ee48:0/SimpleConnection@48860139 [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 5743]
+2022-05-22 17:19:07 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 4.091 seconds (JVM running for 4.628)
+2022-05-22 17:19:07 [RMI TCP Connection(1)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 17:19:07 [RMI TCP Connection(1)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-05-22 17:19:07 [RMI TCP Connection(1)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms
+2022-05-22 17:20:59 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.util.JwtTokenUtil JWT格式验证失败:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiY3JlYXRlZCI6MTY1MjAxMTg3MDM5NiwiZXhwIjoxNjUyNjE2NjcwfQ.v6gXUjnzCEFTJM4C8jFE-qJIyrG6STo1FmMgyHEgZCn5nPTVZ5fHRXqIvoqs646byObYP0pnESpiiQW8g5UpDA
+2022-05-22 17:20:59 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:null
+2022-05-22 17:21:18 [http-nio-8081-exec-3] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 133052
+2022-05-22 17:21:18 [http-nio-8081-exec-3] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 133101
+2022-05-22 17:21:18 [http-nio-8081-exec-3] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 133150
+2022-05-22 17:21:18 [http-nio-8081-exec-3] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 133198
+2022-05-22 17:21:18 [http-nio-8081-exec-3] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.111:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 133257
+2022-05-22 17:21:18 [http-nio-8081-exec-3] DEBUG com.dxl.mall.mapper.UmsMemberMapper.selectByExample ==>  Preparing: select id, member_level_id, username, password, nickname, phone, status, create_time, icon, gender, birthday, city, job, personalized_signature, source_type, integration, growth, luckey_count, history_integration from ums_member WHERE ( username = ? )
+2022-05-22 17:21:18 [http-nio-8081-exec-3] DEBUG com.dxl.mall.mapper.UmsMemberMapper.selectByExample ==> Parameters: test(String)
+2022-05-22 17:21:18 [http-nio-8081-exec-3] DEBUG com.dxl.mall.mapper.UmsMemberMapper.selectByExample <==      Total: 1
+2022-05-22 17:21:31 [http-nio-8081-exec-4] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 17:21:31 [http-nio-8081-exec-4] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 17:21:31 [http-nio-8081-exec-4] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:1000
+2022-05-22 17:21:32 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:1000
+2022-05-22 17:22:08 [http-nio-8081-exec-6] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 17:22:08 [http-nio-8081-exec-6] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 17:22:08 [http-nio-8081-exec-6] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:1000
+2022-05-22 17:22:13 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:1000
+2022-05-22 17:22:58 [http-nio-8081-exec-5] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 17:22:58 [http-nio-8081-exec-5] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 17:22:58 [http-nio-8081-exec-5] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:1
+2022-05-22 17:23:04 [http-nio-8081-exec-7] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 17:23:04 [http-nio-8081-exec-7] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 17:23:04 [http-nio-8081-exec-7] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 17:23:08 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:1
+2022-05-22 17:23:08 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:2
+2022-05-22 17:23:27 [http-nio-8081-exec-8] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 17:23:27 [http-nio-8081-exec-8] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 17:23:27 [http-nio-8081-exec-8] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:1
+2022-05-22 17:23:35 [http-nio-8081-exec-9] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 17:23:35 [http-nio-8081-exec-9] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 17:23:35 [http-nio-8081-exec-9] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 17:24:17 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:1
+2022-05-22 17:24:17 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:2
+2022-05-22 17:45:54 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 12180 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-22 17:45:54 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-22 17:45:54 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-22 17:45:54 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-22 17:45:54 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-22 17:45:54 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 37ms. Found 0 Redis repository interfaces.
+2022-05-22 17:45:55 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1e236278' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:45:55 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:45:55 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-22 17:45:55 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-22 17:45:55 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-22 17:45:55 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-22 17:45:55 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1258 ms
+2022-05-22 17:45:55 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-22 17:45:56 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-22 17:45:56 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-22 17:45:57 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-22 17:45:57 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49e0b123, org.springframework.security.web.context.SecurityContextPersistenceFilter@1884e671, org.springframework.security.web.header.HeaderWriterFilter@c754401, org.springframework.security.web.authentication.logout.LogoutFilter@61c4cebd, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@2120bed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5158a9f7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@553fbe94, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e85e3f1, org.springframework.security.web.session.SessionManagementFilter@e886caf, org.springframework.security.web.access.ExceptionTranslationFilter@97b5e6a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24fef542]
+2022-05-22 17:45:57 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-22 17:45:57 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-22 17:45:57 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-22 17:45:57 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-22 17:45:57 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-22 17:45:57 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-22 17:45:57 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-05-22 17:45:57 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#2321e482:0/SimpleConnection@4a3509b0 [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 5604]
+2022-05-22 17:45:57 [AMQP Connection 192.168.152.130:5672] ERROR org.springframework.amqp.rabbit.connection.CachingConnectionFactory Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'mall.order.direct.ttl' in vhost '/mall': received ''x-delayed-message'' but current is 'direct', class-id=40, method-id=10)
+2022-05-22 17:45:58 [AMQP Connection 192.168.152.130:5672] ERROR org.springframework.amqp.rabbit.connection.CachingConnectionFactory Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'mall.order.direct.ttl' in vhost '/mall': received ''x-delayed-message'' but current is 'direct', class-id=40, method-id=10)
+2022-05-22 17:46:00 [AMQP Connection 192.168.152.130:5672] ERROR org.springframework.amqp.rabbit.connection.CachingConnectionFactory Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'mall.order.direct.ttl' in vhost '/mall': received ''x-delayed-message'' but current is 'direct', class-id=40, method-id=10)
+2022-05-22 17:46:04 [AMQP Connection 192.168.152.130:5672] ERROR org.springframework.amqp.rabbit.connection.CachingConnectionFactory Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'mall.order.direct.ttl' in vhost '/mall': received ''x-delayed-message'' but current is 'direct', class-id=40, method-id=10)
+2022-05-22 17:46:09 [AMQP Connection 192.168.152.130:5672] ERROR org.springframework.amqp.rabbit.connection.CachingConnectionFactory Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=406, reply-text=PRECONDITION_FAILED - inequivalent arg 'type' for exchange 'mall.order.direct.ttl' in vhost '/mall': received ''x-delayed-message'' but current is 'direct', class-id=40, method-id=10)
+2022-05-22 17:46:09 [main] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer Broker not available; cannot force queue declarations during start: java.io.IOException
+2022-05-22 17:46:09 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 15.925 seconds (JVM running for 16.38)
+2022-05-22 17:46:10 [RMI TCP Connection(3)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 17:46:10 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-05-22 17:46:10 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms
+2022-05-22 17:47:26 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 6452 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-22 17:47:26 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-22 17:47:26 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-22 17:47:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-22 17:47:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-22 17:47:27 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2022-05-22 17:47:27 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1e236278' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:47:27 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:47:28 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-22 17:47:28 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-22 17:47:28 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-22 17:47:28 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-22 17:47:28 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1159 ms
+2022-05-22 17:47:28 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-22 17:47:28 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-22 17:47:29 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-22 17:47:29 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-22 17:47:29 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49e0b123, org.springframework.security.web.context.SecurityContextPersistenceFilter@1884e671, org.springframework.security.web.header.HeaderWriterFilter@c754401, org.springframework.security.web.authentication.logout.LogoutFilter@61c4cebd, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@2120bed, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5158a9f7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@553fbe94, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2e85e3f1, org.springframework.security.web.session.SessionManagementFilter@e886caf, org.springframework.security.web.access.ExceptionTranslationFilter@97b5e6a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24fef542]
+2022-05-22 17:47:29 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-22 17:47:29 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-22 17:47:30 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-22 17:47:30 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-22 17:47:30 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-22 17:47:30 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-22 17:47:30 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-05-22 17:47:30 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#2321e482:0/SimpleConnection@6d7556a8 [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 5715]
+2022-05-22 17:47:30 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 3.744 seconds (JVM running for 4.191)
+2022-05-22 17:47:30 [RMI TCP Connection(2)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 17:47:30 [RMI TCP Connection(2)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-05-22 17:47:30 [RMI TCP Connection(2)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 3 ms
+2022-05-22 17:47:44 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 17:47:44 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 17:47:44 [http-nio-8081-exec-2] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 17:49:09 [http-nio-8081-exec-5] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 17:49:09 [http-nio-8081-exec-5] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 17:49:09 [http-nio-8081-exec-5] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 17:59:39 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 5592 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-22 17:59:39 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-22 17:59:39 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-22 17:59:40 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-22 17:59:40 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-22 17:59:40 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 35ms. Found 0 Redis repository interfaces.
+2022-05-22 17:59:40 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4f327096' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:59:40 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 17:59:40 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-22 17:59:40 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-22 17:59:40 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-22 17:59:40 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-22 17:59:40 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1149 ms
+2022-05-22 17:59:40 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-22 17:59:41 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-22 17:59:41 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-22 17:59:42 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-22 17:59:42 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28f90752, org.springframework.security.web.context.SecurityContextPersistenceFilter@1da53f4f, org.springframework.security.web.header.HeaderWriterFilter@6fd7aba8, org.springframework.security.web.authentication.logout.LogoutFilter@1de12397, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@83b0d0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2df71be0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1884e671, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f20b022, org.springframework.security.web.session.SessionManagementFilter@29f95272, org.springframework.security.web.access.ExceptionTranslationFilter@5fc1e4fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@92e2c93]
+2022-05-22 17:59:42 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-22 17:59:42 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-22 17:59:42 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-22 17:59:42 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-22 17:59:42 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-22 17:59:42 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-22 17:59:42 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-05-22 17:59:42 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#7e2bc2f4:0/SimpleConnection@29ea5e0 [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 4529]
+2022-05-22 17:59:42 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer Failed to declare queue: mall.order.cancel
+2022-05-22 17:59:42 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer Queue declaration failed; retries left=3
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[mall.order.cancel]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:700)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:584)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:571)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1343)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1188)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1190)
+	at com.sun.proxy.$Proxy163.queueDeclarePassive(Unknown Source)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:679)
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66)
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36)
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502)
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141)
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517)
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341)
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182)
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114)
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739)
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666)
+	... 1 common frames omitted
+2022-05-22 17:59:47 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer Failed to declare queue: mall.order.cancel
+2022-05-22 17:59:47 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer Queue declaration failed; retries left=2
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[mall.order.cancel]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:700)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:584)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:571)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1343)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1188)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1190)
+	at com.sun.proxy.$Proxy163.queueDeclarePassive(Unknown Source)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:679)
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66)
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36)
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502)
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141)
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517)
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341)
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182)
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114)
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739)
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666)
+	... 1 common frames omitted
+2022-05-22 17:59:52 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer Failed to declare queue: mall.order.cancel
+2022-05-22 17:59:52 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer Queue declaration failed; retries left=1
+org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[mall.order.cancel]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:700)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:584)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:571)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1343)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1188)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1190)
+	at com.sun.proxy.$Proxy163.queueDeclarePassive(Unknown Source)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:679)
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66)
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36)
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502)
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141)
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517)
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341)
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182)
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114)
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739)
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666)
+	... 1 common frames omitted
+2022-05-22 17:59:57 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] WARN  org.springframework.amqp.rabbit.listener.BlockingQueueConsumer Failed to declare queue: mall.order.cancel
+2022-05-22 17:59:57 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] ERROR org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer Consumer threw missing queues exception, fatal=true
+org.springframework.amqp.rabbit.listener.QueuesNotAvailableException: Cannot prepare queue for listener. Either the queue doesn't exist or the broker will not allow us to use it.
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.handleDeclarationException(BlockingQueueConsumer.java:651)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:591)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:571)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1343)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1188)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[mall.order.cancel]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:700)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:584)
+	... 4 common frames omitted
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1190)
+	at com.sun.proxy.$Proxy163.queueDeclarePassive(Unknown Source)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:679)
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66)
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36)
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502)
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141)
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517)
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341)
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182)
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114)
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739)
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666)
+	... 1 common frames omitted
+2022-05-22 17:59:57 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.amqp.rabbit.config.internalRabbitListenerEndpointRegistry'; nested exception is org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
+2022-05-22 17:59:57 [main] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer Waiting for workers to finish.
+2022-05-22 17:59:57 [main] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer Successfully waited for workers to finish.
+2022-05-22 17:59:57 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Shutting down ExecutorService 'applicationTaskExecutor'
+2022-05-22 17:59:57 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] ERROR org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer Stopping container from aborted consumer
+2022-05-22 17:59:57 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer Shutdown ignored - container is not active already
+2022-05-22 17:59:57 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-05-22 17:59:57 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-05-22 17:59:57 [main] INFO  org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2022-05-22 17:59:57 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-22 17:59:57 [main] ERROR org.springframework.boot.SpringApplication Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'org.springframework.amqp.rabbit.config.internalRabbitListenerEndpointRegistry'; nested exception is org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.dxl.mall.PortalApplication.main(PortalApplication.java:10)
+Caused by: org.springframework.amqp.AmqpIllegalStateException: Fatal exception on listener startup
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.waitForConsumersToStart(SimpleMessageListenerContainer.java:612)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doStart(SimpleMessageListenerContainer.java:573)
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.start(AbstractMessageListenerContainer.java:1301)
+	at org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistry.startIfNecessary(RabbitListenerEndpointRegistry.java:299)
+	at org.springframework.amqp.rabbit.listener.RabbitListenerEndpointRegistry.start(RabbitListenerEndpointRegistry.java:249)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	... 14 common frames omitted
+Caused by: org.springframework.amqp.rabbit.listener.QueuesNotAvailableException: Cannot prepare queue for listener. Either the queue doesn't exist or the broker will not allow us to use it.
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.handleDeclarationException(BlockingQueueConsumer.java:651)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:591)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.start(BlockingQueueConsumer.java:571)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1343)
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1188)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.amqp.rabbit.listener.BlockingQueueConsumer$DeclarationException: Failed to declare queue(s):[mall.order.cancel]
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:700)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.passiveDeclarations(BlockingQueueConsumer.java:584)
+	... 4 common frames omitted
+Caused by: java.io.IOException: null
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:129)
+	at com.rabbitmq.client.impl.AMQChannel.wrap(AMQChannel.java:125)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:147)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:1012)
+	at com.rabbitmq.client.impl.ChannelN.queueDeclarePassive(ChannelN.java:46)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$CachedChannelInvocationHandler.invoke(CachingConnectionFactory.java:1190)
+	at com.sun.proxy.$Proxy163.queueDeclarePassive(Unknown Source)
+	at org.springframework.amqp.rabbit.listener.BlockingQueueConsumer.attemptPassiveDeclarations(BlockingQueueConsumer.java:679)
+	... 5 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.utility.ValueOrException.getValue(ValueOrException.java:66)
+	at com.rabbitmq.utility.BlockingValueOrException.uninterruptibleGetValue(BlockingValueOrException.java:36)
+	at com.rabbitmq.client.impl.AMQChannel$BlockingRpcContinuation.getReply(AMQChannel.java:502)
+	at com.rabbitmq.client.impl.AMQChannel.privateRpc(AMQChannel.java:293)
+	at com.rabbitmq.client.impl.AMQChannel.exnWrappingRpc(AMQChannel.java:141)
+	... 14 common frames omitted
+Caused by: com.rabbitmq.client.ShutdownSignalException: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'mall.order.cancel' in vhost '/mall', class-id=50, method-id=10)
+	at com.rabbitmq.client.impl.ChannelN.asyncShutdown(ChannelN.java:517)
+	at com.rabbitmq.client.impl.ChannelN.processAsync(ChannelN.java:341)
+	at com.rabbitmq.client.impl.AMQChannel.handleCompleteInboundCommand(AMQChannel.java:182)
+	at com.rabbitmq.client.impl.AMQChannel.handleFrame(AMQChannel.java:114)
+	at com.rabbitmq.client.impl.AMQConnection.readFrame(AMQConnection.java:739)
+	at com.rabbitmq.client.impl.AMQConnection.access$300(AMQConnection.java:47)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:666)
+	... 1 common frames omitted
+2022-05-22 18:01:18 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 8764 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-22 18:01:18 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-22 18:01:18 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-22 18:01:19 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-22 18:01:19 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-22 18:01:19 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2022-05-22 18:01:19 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4f327096' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 18:01:19 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 18:01:20 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-22 18:01:20 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-22 18:01:20 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-22 18:01:20 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-22 18:01:20 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1165 ms
+2022-05-22 18:01:20 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-22 18:01:20 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-22 18:01:21 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-22 18:01:21 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-22 18:01:21 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@28f90752, org.springframework.security.web.context.SecurityContextPersistenceFilter@1da53f4f, org.springframework.security.web.header.HeaderWriterFilter@6fd7aba8, org.springframework.security.web.authentication.logout.LogoutFilter@1de12397, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@83b0d0f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2df71be0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1884e671, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f20b022, org.springframework.security.web.session.SessionManagementFilter@29f95272, org.springframework.security.web.access.ExceptionTranslationFilter@5fc1e4fb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@92e2c93]
+2022-05-22 18:01:21 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-22 18:01:22 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-22 18:01:22 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-22 18:01:22 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-22 18:01:22 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-22 18:01:22 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-22 18:01:22 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-05-22 18:01:22 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#7e2bc2f4:0/SimpleConnection@17a7d6c8 [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 4612]
+2022-05-22 18:01:22 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 3.779 seconds (JVM running for 4.179)
+2022-05-22 18:01:23 [RMI TCP Connection(2)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 18:01:23 [RMI TCP Connection(2)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-05-22 18:01:23 [RMI TCP Connection(2)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms
+2022-05-22 18:01:30 [http-nio-8081-exec-1] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 18:01:30 [http-nio-8081-exec-1] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 18:01:30 [http-nio-8081-exec-1] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 18:01:30 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:2
+2022-05-22 18:01:37 [http-nio-8081-exec-3] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 18:01:37 [http-nio-8081-exec-3] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 18:01:37 [http-nio-8081-exec-3] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 18:01:37 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:2
+2022-05-22 18:02:15 [http-nio-8081-exec-4] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 18:02:15 [http-nio-8081-exec-4] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 18:02:15 [http-nio-8081-exec-4] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 18:02:15 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:2
+2022-05-22 18:02:20 [http-nio-8081-exec-5] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 18:02:20 [http-nio-8081-exec-5] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 18:02:20 [http-nio-8081-exec-5] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 18:02:20 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:2
+2022-05-22 18:02:31 [http-nio-8081-exec-6] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 18:02:31 [http-nio-8081-exec-6] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 18:02:31 [http-nio-8081-exec-6] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 18:02:31 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:2
+2022-05-22 18:06:02 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 12556 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-22 18:06:02 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-22 18:06:02 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-22 18:06:03 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-22 18:06:03 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-22 18:06:03 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2022-05-22 18:06:03 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3d1f558a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 18:06:03 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-22 18:06:03 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-22 18:06:03 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-22 18:06:03 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-22 18:06:03 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-22 18:06:03 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1274 ms
+2022-05-22 18:06:03 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-22 18:06:04 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-22 18:06:05 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-22 18:06:05 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-22 18:06:05 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47ef5a33, org.springframework.security.web.context.SecurityContextPersistenceFilter@29f95272, org.springframework.security.web.header.HeaderWriterFilter@5fc1e4fb, org.springframework.security.web.authentication.logout.LogoutFilter@2b99c937, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@5be51aa, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1da53f4f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e886caf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6a278584, org.springframework.security.web.session.SessionManagementFilter@62de73eb, org.springframework.security.web.access.ExceptionTranslationFilter@3a4f8e8a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e0847a9]
+2022-05-22 18:06:05 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-22 18:06:05 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-22 18:06:06 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-22 18:06:06 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-22 18:06:06 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-22 18:06:06 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-22 18:06:06 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-05-22 18:06:06 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#60a01cb:0/SimpleConnection@390a07a0 [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 14629]
+2022-05-22 18:06:06 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 4.008 seconds (JVM running for 4.581)
+2022-05-22 18:06:06 [RMI TCP Connection(6)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-22 18:06:06 [RMI TCP Connection(6)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-05-22 18:06:06 [RMI TCP Connection(6)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 4 ms
+2022-05-22 18:06:45 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 18:06:45 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 18:06:45 [http-nio-8081-exec-2] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 18:07:05 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:2
+2022-05-22 18:07:30 [http-nio-8081-exec-3] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 18:07:30 [http-nio-8081-exec-3] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 18:07:30 [http-nio-8081-exec-3] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:1
+2022-05-22 18:07:39 [http-nio-8081-exec-4] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-22 18:07:39 [http-nio-8081-exec-4] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-22 18:07:39 [http-nio-8081-exec-4] INFO  com.dxl.mall.portal.component.CancelOrderSender send orderId:2
+2022-05-22 18:07:40 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.dxl.mall.portal.component.CancelOrderReceiver process orderId:2

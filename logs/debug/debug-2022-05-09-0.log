@@ -1,0 +1,109 @@
+2022-05-09 21:44:58 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 8736 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-09 21:44:58 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-09 21:44:58 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-09 21:45:00 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-09 21:45:00 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-09 21:45:00 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 41ms. Found 0 Redis repository interfaces.
+2022-05-09 21:45:00 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@f324455' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-09 21:45:00 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-09 21:45:00 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-09 21:45:00 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-09 21:45:00 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-09 21:45:00 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-09 21:45:00 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 2813 ms
+2022-05-09 21:45:01 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-09 21:45:01 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-09 21:45:02 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-09 21:45:03 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-09 21:45:03 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b32465, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f6e2ad9, org.springframework.security.web.header.HeaderWriterFilter@75452aea, org.springframework.security.web.authentication.logout.LogoutFilter@2a631049, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@c0c8f96, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1cc9bd9b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e50eeb9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@146f3d22, org.springframework.security.web.session.SessionManagementFilter@58b8f9e3, org.springframework.security.web.access.ExceptionTranslationFilter@2830315f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@498a4d62]
+2022-05-09 21:45:03 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-09 21:45:03 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-09 21:45:03 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-09 21:45:03 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-09 21:45:03 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-09 21:45:03 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-09 21:45:03 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 5.832 seconds (JVM running for 6.466)
+2022-05-09 21:45:03 [RMI TCP Connection(1)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 21:45:03 [RMI TCP Connection(1)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-05-09 21:45:03 [RMI TCP Connection(1)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 5 ms
+2022-05-09 21:45:14 [boundedElastic-1] WARN  org.springframework.boot.actuate.redis.RedisReactiveHealthIndicator Redis health check failed
+org.springframework.data.redis.RedisConnectionFailureException: Unable to connect to Redis; nested exception is io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.152.128:6379
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.translateException(LettuceConnectionFactory.java:1534)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1442)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getNativeConnection(LettuceConnectionFactory.java:1228)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$SharedConnection.getConnection(LettuceConnectionFactory.java:1211)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getSharedReactiveConnection(LettuceConnectionFactory.java:985)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:446)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory.getReactiveConnection(LettuceConnectionFactory.java:99)
+	at reactor.core.publisher.MonoSupplier.call(MonoSupplier.java:85)
+	at reactor.core.publisher.FluxSubscribeOnCallable$CallableSubscribeOnSubscription.run(FluxSubscribeOnCallable.java:225)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68)
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisConnectionException: Unable to connect to 192.168.152.128:6379
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:78)
+	at io.lettuce.core.RedisConnectionException.create(RedisConnectionException.java:56)
+	at io.lettuce.core.AbstractRedisClient.getConnection(AbstractRedisClient.java:234)
+	at io.lettuce.core.RedisClient.connect(RedisClient.java:207)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.lambda$getConnection$1(StandaloneConnectionProvider.java:115)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.springframework.data.redis.connection.lettuce.StandaloneConnectionProvider.getConnection(StandaloneConnectionProvider.java:115)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnectionFactory$ExceptionTranslatingConnectionProvider.getConnection(LettuceConnectionFactory.java:1440)
+	... 15 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out: /192.168.152.128:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:261)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2022-05-09 21:45:52 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 8864 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-05-09 21:45:52 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-05-09 21:45:52 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-05-09 21:45:53 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-05-09 21:45:53 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-05-09 21:45:53 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 34ms. Found 0 Redis repository interfaces.
+2022-05-09 21:45:53 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@7b6c6e70' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-09 21:45:53 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-09 21:45:53 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-05-09 21:45:53 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-05-09 21:45:53 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-05-09 21:45:53 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-05-09 21:45:53 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1340 ms
+2022-05-09 21:45:53 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-05-09 21:45:54 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-05-09 21:45:55 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-05-09 21:45:55 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-05-09 21:45:55 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66b6873f, org.springframework.security.web.context.SecurityContextPersistenceFilter@1cc9bd9b, org.springframework.security.web.header.HeaderWriterFilter@4537880f, org.springframework.security.web.authentication.logout.LogoutFilter@3eec8583, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@74a58a06, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d1cfe4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@48b2dbc4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52285a5f, org.springframework.security.web.session.SessionManagementFilter@5f6e2ad9, org.springframework.security.web.access.ExceptionTranslationFilter@75452aea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3f3c5ecd]
+2022-05-09 21:45:55 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-05-09 21:45:55 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-05-09 21:45:55 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-09 21:45:55 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-05-09 21:45:55 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-05-09 21:45:55 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-05-09 21:45:56 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 4.029 seconds (JVM running for 4.585)
+2022-05-09 21:45:56 [RMI TCP Connection(2)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-09 21:45:56 [RMI TCP Connection(2)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-05-09 21:45:56 [RMI TCP Connection(2)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 6 ms
+2022-05-09 21:46:26 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-09 21:46:26 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsMemberMapper.selectByExample ==>  Preparing: select id, member_level_id, username, password, nickname, phone, status, create_time, icon, gender, birthday, city, job, personalized_signature, source_type, integration, growth, luckey_count, history_integration from ums_member WHERE ( username = ? )
+2022-05-09 21:46:26 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsMemberMapper.selectByExample ==> Parameters: test(String)
+2022-05-09 21:46:26 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsMemberMapper.selectByExample <==      Total: 1
+2022-05-09 21:46:26 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-09 21:46:26 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.OmsCartItemMapper.selectByExample ==>  Preparing: select id, product_id, product_sku_id, member_id, quantity, price, product_pic, product_name, product_sub_title, product_sku_code, member_nickname, create_date, modify_date, delete_status, product_category_id, product_brand, product_sn, product_attr from oms_cart_item WHERE ( delete_status = ? and member_id = ? )
+2022-05-09 21:46:26 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.OmsCartItemMapper.selectByExample ==> Parameters: 0(Integer), 1(Long)
+2022-05-09 21:46:26 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.OmsCartItemMapper.selectByExample <==      Total: 0
+2022-05-09 21:47:23 [http-nio-8081-exec-3] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-05-09 21:47:23 [http-nio-8081-exec-3] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-05-09 21:47:23 [http-nio-8081-exec-3] DEBUG com.dxl.mall.mapper.OmsCartItemMapper.selectByExample ==>  Preparing: select id, product_id, product_sku_id, member_id, quantity, price, product_pic, product_name, product_sub_title, product_sku_code, member_nickname, create_date, modify_date, delete_status, product_category_id, product_brand, product_sn, product_attr from oms_cart_item WHERE ( delete_status = ? and member_id = ? )
+2022-05-09 21:47:23 [http-nio-8081-exec-3] DEBUG com.dxl.mall.mapper.OmsCartItemMapper.selectByExample ==> Parameters: 0(Integer), 1(Long)
+2022-05-09 21:47:23 [http-nio-8081-exec-3] DEBUG com.dxl.mall.mapper.OmsCartItemMapper.selectByExample <==      Total: 1

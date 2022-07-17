@@ -1,0 +1,224 @@
+2022-04-25 10:41:14 [main] INFO  com.dxl.mall.AdminApplication Starting AdminApplication on DESKTOP-207R08R with PID 18784 (D:\webProject\mall\admin\target\classes started by DXL in D:\webProject\mall)
+2022-04-25 10:41:14 [main] DEBUG com.dxl.mall.AdminApplication Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2022-04-25 10:41:14 [main] INFO  com.dxl.mall.AdminApplication The following profiles are active: dev
+2022-04-25 10:41:16 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-25 10:41:16 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-25 10:41:16 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 52ms. Found 0 Redis repository interfaces.
+2022-04-25 10:41:17 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@1fdca564' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-25 10:41:17 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-25 10:41:17 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-04-25 10:41:17 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-25 10:41:17 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-04-25 10:41:17 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-25 10:41:17 [main] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 3096 ms
+2022-04-25 10:41:17 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-04-25 10:41:18 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-04-25 10:41:19 [main] DEBUG com.dxl.mall.mapper.UmsResourceMapper.selectByExample ==>  Preparing: select id, create_time, name, url, description, category_id from ums_resource
+2022-04-25 10:41:19 [main] DEBUG com.dxl.mall.mapper.UmsResourceMapper.selectByExample ==> Parameters: 
+2022-04-25 10:41:19 [main] DEBUG com.dxl.mall.mapper.UmsResourceMapper.selectByExample <==      Total: 28
+2022-04-25 10:41:19 [main] WARN  com.dxl.mall.security.component.DynamicSecurityFilter Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+2022-04-25 10:41:19 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-04-25 10:41:19 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'pmsSkuStockController': Unsatisfied dependency expressed through field 'skuStockService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.dxl.mall.service.PmsSkuStockService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-04-25 10:41:19 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2022-04-25 10:41:19 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2022-04-25 10:41:19 [main] INFO  org.apache.catalina.core.StandardService Stopping service [Tomcat]
+2022-04-25 10:41:19 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-04-25 10:41:19 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field skuStockService in com.dxl.mall.controller.PmsSkuStockController required a bean of type 'com.dxl.mall.service.PmsSkuStockService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.dxl.mall.service.PmsSkuStockService' in your configuration.
+
+2022-04-25 10:41:19 [main] WARN  org.springframework.boot.SpringApplication Unable to close ApplicationContext
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'delegatingApplicationListener' defined in class path resource [org/springframework/security/config/annotation/web/configuration/WebSecurityConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:512)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.retrieveApplicationListeners(AbstractApplicationEventMulticaster.java:245)
+	at org.springframework.context.event.AbstractApplicationEventMulticaster.getApplicationListeners(AbstractApplicationEventMulticaster.java:197)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:134)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:81)
+	at org.springframework.boot.availability.AvailabilityChangeEvent.publish(AvailabilityChangeEvent.java:67)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:167)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:978)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:814)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.dxl.mall.AdminApplication.main(AdminApplication.java:11)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'metaDataSourceAdvisor': Cannot resolve reference to bean 'methodSecurityMetadataSource' while setting constructor argument; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:342)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:113)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolvePreparedArguments(ConstructorResolver.java:835)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:151)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1358)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1193)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:251)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1141)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1114)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:506)
+	... 18 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:603)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:409)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:226)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:330)
+	... 37 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:814)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1282)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:297)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor.postProcessBeforeInitialization(ConfigurationClassPostProcessor.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1788)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:595)
+	... 52 common frames omitted
+2022-04-25 10:41:57 [main] INFO  com.dxl.mall.AdminApplication Starting AdminApplication on DESKTOP-207R08R with PID 15116 (D:\webProject\mall\admin\target\classes started by DXL in D:\webProject\mall)
+2022-04-25 10:41:57 [main] DEBUG com.dxl.mall.AdminApplication Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2022-04-25 10:41:57 [main] INFO  com.dxl.mall.AdminApplication The following profiles are active: dev
+2022-04-25 10:41:58 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-25 10:41:58 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-04-25 10:41:58 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 46ms. Found 0 Redis repository interfaces.
+2022-04-25 10:41:58 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@22ebccb9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-25 10:41:58 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-04-25 10:41:59 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+2022-04-25 10:41:59 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-04-25 10:41:59 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-04-25 10:41:59 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-04-25 10:41:59 [main] INFO  org.springframework.web.context.ContextLoader Root WebApplicationContext: initialization completed in 1528 ms
+2022-04-25 10:41:59 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-04-25 10:41:59 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-04-25 10:42:00 [main] DEBUG com.dxl.mall.mapper.UmsResourceMapper.selectByExample ==>  Preparing: select id, create_time, name, url, description, category_id from ums_resource
+2022-04-25 10:42:00 [main] DEBUG com.dxl.mall.mapper.UmsResourceMapper.selectByExample ==> Parameters: 
+2022-04-25 10:42:00 [main] DEBUG com.dxl.mall.mapper.UmsResourceMapper.selectByExample <==      Total: 28
+2022-04-25 10:42:00 [main] WARN  com.dxl.mall.security.component.DynamicSecurityFilter Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+2022-04-25 10:42:00 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-04-25 10:42:00 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-04-25 10:42:00 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45796b2a, org.springframework.security.web.context.SecurityContextPersistenceFilter@192b472d, org.springframework.security.web.header.HeaderWriterFilter@f9b8129, org.springframework.security.web.authentication.logout.LogoutFilter@3ad847f8, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@629075f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45b96e4c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@542c65d9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b98225c, org.springframework.security.web.session.SessionManagementFilter@5353dd09, org.springframework.security.web.access.ExceptionTranslationFilter@6eabe718, com.dxl.mall.security.component.DynamicSecurityFilter@625487a6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e8b8f0]
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-04-25 10:42:01 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-04-25 10:42:01 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getListUsingGET_1
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getListUsingGET_2
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: updateUsingPOST_1
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: createUsingPOST_1
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_1
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: updateUsingPOST_2
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: createUsingPOST_2
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_1
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: updateUsingPOST_3
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: createUsingPOST_3
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_2
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getItemUsingGET_1
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_2
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listAllUsingGET_1
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: updateUsingPOST_4
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: createUsingPOST_4
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_3
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_3
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listAllUsingGET_2
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: updateUsingPOST_5
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_4
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: getItemUsingGET_2
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_4
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: updateUsingPOST_6
+2022-04-25 10:42:01 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: updateStatusUsingPOST_1
+2022-04-25 10:42:01 [main] INFO  com.dxl.mall.AdminApplication Started AdminApplication in 4.456 seconds (JVM running for 4.985)
+2022-04-25 10:42:02 [RMI TCP Connection(3)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-04-25 10:42:02 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-04-25 10:42:02 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 6 ms
+2022-04-25 10:43:22 [http-nio-8080-exec-1] INFO  com.dxl.mall.security.util.JwtTokenUtil JWT格式验证失败:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkeGwiLCJjcmVhdGVkIjoxNjUwMjAxMzQxOTQ0LCJleHAiOjE2NTA4MDYxNDF9.b6tHbkpIhJyZSYfdgUDrHem6lKu2ArPQQWW0Do3bOyyBUiN9dmVvgTPaaMECC5COaCaGgxdsydGNPIbl7S-2TQ
+2022-04-25 10:43:22 [http-nio-8080-exec-1] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:null
+2022-04-25 10:43:22 [http-nio-8080-exec-1] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Secure object: FilterInvocation: URL: /sku/27; Attributes: [6:商品库存管理]
+2022-04-25 10:43:22 [http-nio-8080-exec-1] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Previously Authenticated: org.springframework.security.authentication.AnonymousAuthenticationToken@2e803230: Principal: anonymousUser; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@ffff6a82: RemoteIpAddress: 10.253.193.65; SessionId: null; Granted Authorities: ROLE_ANONYMOUS
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 104225
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 105167
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 105199
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 105234
+2022-04-25 10:43:44 [http-nio-8080-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 105268
+2022-04-25 10:43:44 [http-nio-8080-exec-2] DEBUG com.dxl.mall.mapper.UmsAdminMapper.selectByExample ==>  Preparing: select id, username, password, icon, email, nick_name, note, create_time, login_time, status from ums_admin WHERE ( username = ? )
+2022-04-25 10:43:44 [http-nio-8080-exec-2] DEBUG com.dxl.mall.mapper.UmsAdminMapper.selectByExample ==> Parameters: dxl(String)
+2022-04-25 10:43:44 [http-nio-8080-exec-2] DEBUG com.dxl.mall.mapper.UmsAdminMapper.selectByExample <==      Total: 1
+2022-04-25 10:43:44 [http-nio-8080-exec-2] DEBUG com.dxl.mall.dao.UmsAdminRoleRelationDao.getResourceList ==>  Preparing: SELECT ur.id id, ur.create_time createTime, ur.`name` `name`, ur.url url, ur.description description, ur.category_id categoryId FROM ums_admin_role_relation ar LEFT JOIN ums_role r ON ar.role_id = r.id LEFT JOIN ums_role_resource_relation rrr ON r.id = rrr.role_id LEFT JOIN ums_resource ur ON ur.id = rrr.resource_id WHERE ar.admin_id = ? AND ur.id IS NOT NULL GROUP BY ur.id
+2022-04-25 10:43:44 [http-nio-8080-exec-2] DEBUG com.dxl.mall.dao.UmsAdminRoleRelationDao.getResourceList ==> Parameters: 9(Long)
+2022-04-25 10:43:44 [http-nio-8080-exec-2] DEBUG com.dxl.mall.dao.UmsAdminRoleRelationDao.getResourceList <==      Total: 28
+2022-04-25 10:43:54 [http-nio-8080-exec-4] DEBUG com.dxl.mall.mapper.UmsAdminLoginLogMapper.insert ==>  Preparing: insert into ums_admin_login_log (admin_id, create_time, ip, address, user_agent) values (?, ?, ?, ?, ?)
+2022-04-25 10:43:54 [http-nio-8080-exec-4] DEBUG com.dxl.mall.mapper.UmsAdminLoginLogMapper.insert ==> Parameters: 9(Long), 2022-04-25 10:43:54.69(Timestamp), 10.253.193.65(String), null, null
+2022-04-25 10:43:54 [http-nio-8080-exec-4] DEBUG com.dxl.mall.mapper.UmsAdminLoginLogMapper.insert <==    Updates: 1
+2022-04-25 10:43:54 [http-nio-8080-exec-4] DEBUG com.dxl.mall.mapper.UmsAdminLoginLogMapper.insert!selectKey ==>  Preparing: SELECT LAST_INSERT_ID()
+2022-04-25 10:43:54 [http-nio-8080-exec-4] DEBUG com.dxl.mall.mapper.UmsAdminLoginLogMapper.insert!selectKey ==> Parameters: 
+2022-04-25 10:43:54 [http-nio-8080-exec-4] DEBUG com.dxl.mall.mapper.UmsAdminLoginLogMapper.insert!selectKey <==      Total: 1
+2022-04-25 10:44:15 [http-nio-8080-exec-5] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:dxl
+2022-04-25 10:44:15 [http-nio-8080-exec-5] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:dxl
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Secure object: FilterInvocation: URL: /sku/27; Attributes: [6:商品库存管理]
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@6dd0fa5b: Principal: com.dxl.mall.bo.AdminUserDetails@2de6cabd; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@ffff6a82: RemoteIpAddress: 10.253.193.65; SessionId: null; Granted Authorities: 1:商品品牌管理, 2:商品属性分类管理, 3:商品属性管理, 4:商品分类管理, 5:商品管理, 6:商品库存管理, 8:订单管理, 9: 订单退货申请管理, 10:退货原因管理, 11:订单设置管理, 12:收货地址管理, 13:优惠券管理, 14:优惠券领取记录管理, 15:限时购活动管理, 16:限时购商品关系管理, 17:限时购场次管理, 18:首页轮播广告管理, 19:首页品牌管理, 20:首页新品管理, 21:首页人气推荐管理, 22:首页专题推荐管理, 23: 商品优选管理, 24:商品专题管理, 25:后台用户管理, 26:后台用户角色管理, 27:后台菜单管理, 28:后台资源分类管理, 29:后台资源管理
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Authorization successful
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter RunAsManager did not change Authentication object
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Secure object: FilterInvocation: URL: /sku/27; Attributes: [6:商品库存管理]
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@6dd0fa5b: Principal: com.dxl.mall.bo.AdminUserDetails@2de6cabd; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@ffff6a82: RemoteIpAddress: 10.253.193.65; SessionId: null; Granted Authorities: 1:商品品牌管理, 2:商品属性分类管理, 3:商品属性管理, 4:商品分类管理, 5:商品管理, 6:商品库存管理, 8:订单管理, 9: 订单退货申请管理, 10:退货原因管理, 11:订单设置管理, 12:收货地址管理, 13:优惠券管理, 14:优惠券领取记录管理, 15:限时购活动管理, 16:限时购商品关系管理, 17:限时购场次管理, 18:首页轮播广告管理, 19:首页品牌管理, 20:首页新品管理, 21:首页人气推荐管理, 22:首页专题推荐管理, 23: 商品优选管理, 24:商品专题管理, 25:后台用户管理, 26:后台用户角色管理, 27:后台菜单管理, 28:后台资源分类管理, 29:后台资源管理
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Authorization successful
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter RunAsManager did not change Authentication object
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.mapper.PmsSkuStockMapper.selectByExample ==>  Preparing: select id, product_id, sku_code, price, stock, low_stock, pic, sale, promotion_price, lock_stock, sp_data from pms_sku_stock WHERE ( product_id = ? )
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.mapper.PmsSkuStockMapper.selectByExample ==> Parameters: 27(Long)
+2022-04-25 10:44:15 [http-nio-8080-exec-5] DEBUG com.dxl.mall.mapper.PmsSkuStockMapper.selectByExample <==      Total: 4
+2022-04-25 10:47:53 [http-nio-8080-exec-7] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:dxl
+2022-04-25 10:47:53 [http-nio-8080-exec-7] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:dxl
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Secure object: FilterInvocation: URL: /product/list; Attributes: [5:商品管理]
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@58c01928: Principal: com.dxl.mall.bo.AdminUserDetails@18f629ce; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@ffff6a82: RemoteIpAddress: 10.253.193.65; SessionId: null; Granted Authorities: 1:商品品牌管理, 2:商品属性分类管理, 3:商品属性管理, 4:商品分类管理, 5:商品管理, 6:商品库存管理, 8:订单管理, 9: 订单退货申请管理, 10:退货原因管理, 11:订单设置管理, 12:收货地址管理, 13:优惠券管理, 14:优惠券领取记录管理, 15:限时购活动管理, 16:限时购商品关系管理, 17:限时购场次管理, 18:首页轮播广告管理, 19:首页品牌管理, 20:首页新品管理, 21:首页人气推荐管理, 22:首页专题推荐管理, 23: 商品优选管理, 24:商品专题管理, 25:后台用户管理, 26:后台用户角色管理, 27:后台菜单管理, 28:后台资源分类管理, 29:后台资源管理
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Authorization successful
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter RunAsManager did not change Authentication object
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Secure object: FilterInvocation: URL: /product/list; Attributes: [5:商品管理]
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Previously Authenticated: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@58c01928: Principal: com.dxl.mall.bo.AdminUserDetails@18f629ce; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@ffff6a82: RemoteIpAddress: 10.253.193.65; SessionId: null; Granted Authorities: 1:商品品牌管理, 2:商品属性分类管理, 3:商品属性管理, 4:商品分类管理, 5:商品管理, 6:商品库存管理, 8:订单管理, 9: 订单退货申请管理, 10:退货原因管理, 11:订单设置管理, 12:收货地址管理, 13:优惠券管理, 14:优惠券领取记录管理, 15:限时购活动管理, 16:限时购商品关系管理, 17:限时购场次管理, 18:首页轮播广告管理, 19:首页品牌管理, 20:首页新品管理, 21:首页人气推荐管理, 22:首页专题推荐管理, 23: 商品优选管理, 24:商品专题管理, 25:后台用户管理, 26:后台用户角色管理, 27:后台菜单管理, 28:后台资源分类管理, 29:后台资源管理
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter Authorization successful
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.security.component.DynamicSecurityFilter RunAsManager did not change Authentication object
+2022-04-25 10:47:53 [http-nio-8080-exec-7] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, jdbcUrl : jdbc:mysql://192.168.1.108:3306/mall?useUnicode=true&characterEncoding=UTF-8&useSSL=false, lastPacketReceivedIdleMillis : 217485
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.mapper.PmsProductMapper.selectByExample_COUNT ==>  Preparing: SELECT count(0) FROM pms_product WHERE (delete_status = ?)
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.mapper.PmsProductMapper.selectByExample_COUNT ==> Parameters: 0(Integer)
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.mapper.PmsProductMapper.selectByExample_COUNT <==      Total: 1
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.mapper.PmsProductMapper.selectByExample ==>  Preparing: select id, brand_id, product_category_id, feight_template_id, product_attribute_category_id, name, pic, product_sn, delete_status, publish_status, new_status, recommand_status, verify_status, sort, sale, price, promotion_price, gift_growth, gift_point, use_point_limit, sub_title, original_price, stock, low_stock, unit, weight, preview_status, service_ids, keywords, note, album_pics, detail_title, promotion_start_time, promotion_end_time, promotion_per_limit, promotion_type, brand_name, product_category_name from pms_product WHERE ( delete_status = ? ) LIMIT ?
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.mapper.PmsProductMapper.selectByExample ==> Parameters: 0(Integer), 5(Integer)
+2022-04-25 10:47:53 [http-nio-8080-exec-7] DEBUG com.dxl.mall.mapper.PmsProductMapper.selectByExample <==      Total: 5

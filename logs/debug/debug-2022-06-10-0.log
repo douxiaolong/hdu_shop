@@ -1,0 +1,313 @@
+2022-06-10 18:48:56 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 12816 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-06-10 18:48:56 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-06-10 18:48:56 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-06-10 18:48:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-10 18:48:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-10 18:48:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 83ms. Found 3 MongoDB repository interfaces.
+2022-06-10 18:48:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-10 18:48:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-10 18:48:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dxl.mall.portal.repository.MemberBrandAttentionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-10 18:48:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dxl.mall.portal.repository.MemberProductCollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-10 18:48:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dxl.mall.portal.repository.MemberReadHistoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-10 18:48:59 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2022-06-10 18:48:59 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@18a19e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-10 18:48:59 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-10 18:48:59 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-06-10 18:48:59 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-06-10 18:48:59 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-06-10 18:48:59 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-06-10 18:48:59 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 3213 ms
+2022-06-10 18:49:00 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-06-10 18:49:01 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-06-10 18:49:02 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-06-10 18:49:03 [main] INFO  org.mongodb.driver.cluster Cluster created with settings {hosts=[192.168.152.131:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-06-10 18:49:03 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-06-10 18:49:04 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@250e8712, org.springframework.security.web.context.SecurityContextPersistenceFilter@77e1dacd, org.springframework.security.web.header.HeaderWriterFilter@102aa5fc, org.springframework.security.web.authentication.logout.LogoutFilter@3e0e0ba7, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@674aa626, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c5d376c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@56976b8b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@becb93a, org.springframework.security.web.session.SessionManagementFilter@796cf2b5, org.springframework.security.web.access.ExceptionTranslationFilter@1ad9d5be, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a14f7d7]
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-10 18:49:04 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-10 18:49:04 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_1
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: clearUsingPOST_1
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_1
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_1
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_1
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: clearUsingPOST_2
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_2
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_2
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_2
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: clearUsingPOST_3
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_3
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_3
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_2
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_4
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: createUsingPOST_1
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_3
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_4
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_3
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_5
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_4
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_4
+2022-06-10 18:49:04 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_6
+2022-06-10 18:49:04 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-06-10 18:49:05 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#52f43225:0/SimpleConnection@7674f9d4 [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 10975]
+2022-06-10 18:49:05 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 8.807 seconds (JVM running for 9.492)
+2022-06-10 18:49:05 [RMI TCP Connection(1)-192.168.152.1] INFO  org.mongodb.driver.cluster Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-06-10 18:49:05 [RMI TCP Connection(3)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-10 18:49:05 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-06-10 18:49:05 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 6 ms
+2022-06-10 18:49:13 [cluster-ClusterId{value='62a3219f936d06157f0d52af', description='null'}-192.168.152.131:27017] INFO  org.mongodb.driver.cluster Exception in monitor thread while connecting to server 192.168.152.131:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:63)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2022-06-10 18:49:35 [RMI TCP Connection(1)-192.168.152.1] WARN  org.springframework.boot.actuate.mongo.MongoHealthIndicator MongoDB health check failed
+org.springframework.dao.DataAccessResourceFailureException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=192.168.152.131:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]; nested exception is com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=192.168.152.131:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]
+	at org.springframework.data.mongodb.core.MongoExceptionTranslator.translateExceptionIfPossible(MongoExceptionTranslator.java:88)
+	at org.springframework.data.mongodb.core.MongoTemplate.potentiallyConvertRuntimeException(MongoTemplate.java:2874)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:541)
+	at org.springframework.data.mongodb.core.MongoTemplate.executeCommand(MongoTemplate.java:457)
+	at org.springframework.boot.actuate.mongo.MongoHealthIndicator.doHealthCheck(MongoHealthIndicator.java:46)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:71)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:39)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:99)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:96)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:74)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:61)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:65)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:282)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:77)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:121)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:96)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:819)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:801)
+	at javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1468)
+	at javax.management.remote.rmi.RMIConnectionImpl.access$300(RMIConnectionImpl.java:76)
+	at javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1309)
+	at javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1401)
+	at javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:346)
+	at sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:568)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:826)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:683)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:682)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mongodb.MongoTimeoutException: Timed out after 30000 ms while waiting to connect. Client view of cluster state is {type=UNKNOWN, servers=[{address=192.168.152.131:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]
+	at com.mongodb.internal.connection.BaseCluster.getDescription(BaseCluster.java:177)
+	at com.mongodb.internal.connection.SingleServerCluster.getDescription(SingleServerCluster.java:41)
+	at com.mongodb.client.internal.MongoClientDelegate.getConnectedClusterDescription(MongoClientDelegate.java:147)
+	at com.mongodb.client.internal.MongoClientDelegate.createClientSession(MongoClientDelegate.java:98)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.getClientSession(MongoClientDelegate.java:278)
+	at com.mongodb.client.internal.MongoClientDelegate$DelegateOperationExecutor.execute(MongoClientDelegate.java:182)
+	at com.mongodb.client.internal.MongoDatabaseImpl.executeCommand(MongoDatabaseImpl.java:194)
+	at com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:163)
+	at com.mongodb.client.internal.MongoDatabaseImpl.runCommand(MongoDatabaseImpl.java:158)
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$executeCommand$2(MongoTemplate.java:457)
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:539)
+	... 46 common frames omitted
+2022-06-10 18:54:04 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 19924 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-06-10 18:54:04 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-06-10 18:54:04 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-06-10 18:54:05 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-10 18:54:05 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-10 18:54:05 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 94ms. Found 3 MongoDB repository interfaces.
+2022-06-10 18:54:05 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-10 18:54:05 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-10 18:54:05 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dxl.mall.portal.repository.MemberBrandAttentionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-10 18:54:05 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dxl.mall.portal.repository.MemberProductCollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-10 18:54:05 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dxl.mall.portal.repository.MemberReadHistoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-10 18:54:05 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2022-06-10 18:54:06 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@40c2ce52' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-10 18:54:06 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-10 18:54:06 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-06-10 18:54:06 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-06-10 18:54:06 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-06-10 18:54:06 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-06-10 18:54:06 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1616 ms
+2022-06-10 18:54:06 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-06-10 18:54:07 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-06-10 18:54:08 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-06-10 18:54:08 [main] INFO  org.mongodb.driver.cluster Cluster created with settings {hosts=[192.168.152.131:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-06-10 18:54:09 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-06-10 18:54:09 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@22b3b5d0, org.springframework.security.web.context.SecurityContextPersistenceFilter@615e7fe7, org.springframework.security.web.header.HeaderWriterFilter@7a0f43dc, org.springframework.security.web.authentication.logout.LogoutFilter@188ae8d2, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@13a268cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@403cff1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34b462e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b506a79, org.springframework.security.web.session.SessionManagementFilter@1c5d376c, org.springframework.security.web.access.ExceptionTranslationFilter@4bab804f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@141229f6]
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-10 18:54:09 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-10 18:54:09 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_1
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: clearUsingPOST_1
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_1
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_1
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_1
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: clearUsingPOST_2
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_2
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_2
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_2
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: clearUsingPOST_3
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_3
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_3
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_2
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_4
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: createUsingPOST_1
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_3
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_4
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_3
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_5
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_4
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_4
+2022-06-10 18:54:09 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_6
+2022-06-10 18:54:09 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-06-10 18:54:09 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#53b7bf01:0/SimpleConnection@436d2bb9 [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 11483]
+2022-06-10 18:54:10 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 5.574 seconds (JVM running for 6.067)
+2022-06-10 18:54:10 [RMI TCP Connection(3)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-10 18:54:10 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-06-10 18:54:10 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 7 ms
+2022-06-10 18:54:10 [RMI TCP Connection(4)-192.168.152.1] INFO  org.mongodb.driver.cluster Cluster description not yet available. Waiting for 30000 ms before timing out
+2022-06-10 18:54:18 [cluster-ClusterId{value='62a322d00f3528695c8b89ec', description='null'}-192.168.152.131:27017] INFO  org.mongodb.driver.cluster Exception in monitor thread while connecting to server 192.168.152.131:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:127)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.SocketTimeoutException: connect timed out
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:63)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 3 common frames omitted
+2022-06-10 18:54:18 [cluster-ClusterId{value='62a322d00f3528695c8b89ec', description='null'}-192.168.152.131:27017] INFO  org.mongodb.driver.connection Opened connection [connectionId{localValue:2, serverValue:122}] to 192.168.152.131:27017
+2022-06-10 18:54:18 [cluster-ClusterId{value='62a322d00f3528695c8b89ec', description='null'}-192.168.152.131:27017] INFO  org.mongodb.driver.cluster Monitor thread successfully connected to server with description ServerDescription{address=192.168.152.131:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2193000}
+2022-06-10 18:54:18 [RMI TCP Connection(4)-192.168.152.1] INFO  org.mongodb.driver.connection Opened connection [connectionId{localValue:3, serverValue:123}] to 192.168.152.131:27017
+2022-06-10 18:55:03 [main] INFO  com.dxl.mall.PortalApplication Starting PortalApplication on DESKTOP-207R08R with PID 13016 (D:\webProject\mall\portal\target\classes started by DXL in D:\webProject\mall)
+2022-06-10 18:55:03 [main] DEBUG com.dxl.mall.PortalApplication Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2022-06-10 18:55:03 [main] INFO  com.dxl.mall.PortalApplication The following profiles are active: dev
+2022-06-10 18:55:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-10 18:55:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-06-10 18:55:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 78ms. Found 3 MongoDB repository interfaces.
+2022-06-10 18:55:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-10 18:55:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-10 18:55:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dxl.mall.portal.repository.MemberBrandAttentionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-10 18:55:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dxl.mall.portal.repository.MemberProductCollectionRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-10 18:55:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.dxl.mall.portal.repository.MemberReadHistoryRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2022-06-10 18:55:04 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2022-06-10 18:55:04 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@18a19e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-10 18:55:04 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-06-10 18:55:05 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8081 (http)
+2022-06-10 18:55:05 [main] INFO  org.apache.catalina.core.StandardService Starting service [Tomcat]
+2022-06-10 18:55:05 [main] INFO  org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.35]
+2022-06-10 18:55:05 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2022-06-10 18:55:05 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1482 ms
+2022-06-10 18:55:05 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2022-06-10 18:55:05 [main] INFO  com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2022-06-10 18:55:06 [main] DEBUG com.dxl.mall.security.component.JwtAuthenticationTokenFilter Filter 'jwtAuthenticationTokenFilter' configured for use
+2022-06-10 18:55:06 [main] INFO  org.mongodb.driver.cluster Cluster created with settings {hosts=[192.168.152.131:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2022-06-10 18:55:06 [cluster-ClusterId{value='62a3230a17ad3623f3f426f4', description='null'}-192.168.152.131:27017] INFO  org.mongodb.driver.connection Opened connection [connectionId{localValue:1, serverValue:124}] to 192.168.152.131:27017
+2022-06-10 18:55:06 [cluster-ClusterId{value='62a3230a17ad3623f3f426f4', description='null'}-192.168.152.131:27017] INFO  org.mongodb.driver.cluster Monitor thread successfully connected to server with description ServerDescription{address=192.168.152.131:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=6, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1703200}
+2022-06-10 18:55:07 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Exposing 2 endpoint(s) beneath base path '/actuator'
+2022-06-10 18:55:07 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2699b656, org.springframework.security.web.context.SecurityContextPersistenceFilter@5213b887, org.springframework.security.web.header.HeaderWriterFilter@1c23e369, org.springframework.security.web.authentication.logout.LogoutFilter@144dc2f7, com.dxl.mall.security.component.JwtAuthenticationTokenFilter@13a268cd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f4029e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@46fdfaeb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d67b2b3, org.springframework.security.web.session.SessionManagementFilter@8e3449e, org.springframework.security.web.access.ExceptionTranslationFilter@39f8adc0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@626766fd]
+2022-06-10 18:55:07 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-06-10 18:55:07 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Initializing ExecutorService 'applicationTaskExecutor'
+2022-06-10 18:55:08 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8081 (http) with context path ''
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_1
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: clearUsingPOST_1
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_1
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_1
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_1
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: clearUsingPOST_2
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_2
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_2
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_2
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: clearUsingPOST_3
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_3
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_3
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_2
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_4
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: createUsingPOST_1
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_3
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: detailUsingGET_4
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_3
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_5
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: addUsingPOST_4
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: deleteUsingPOST_4
+2022-06-10 18:55:08 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: listUsingGET_6
+2022-06-10 18:55:08 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Attempting to connect to: [192.168.152.130:5672]
+2022-06-10 18:55:08 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory Created new connection: rabbitConnectionFactory#53b7bf01:0/SimpleConnection@7bdddfa4 [delegate=amqp://admin@192.168.152.130:5672//mall, localPort= 11618]
+2022-06-10 18:55:08 [main] INFO  com.dxl.mall.PortalApplication Started PortalApplication in 5.313 seconds (JVM running for 5.786)
+2022-06-10 18:55:09 [RMI TCP Connection(3)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-10 18:55:09 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+2022-06-10 18:55:09 [RMI TCP Connection(3)-192.168.152.1] INFO  org.springframework.web.servlet.DispatcherServlet Completed initialization in 7 ms
+2022-06-10 18:55:09 [RMI TCP Connection(2)-192.168.152.1] INFO  org.mongodb.driver.connection Opened connection [connectionId{localValue:2, serverValue:125}] to 192.168.152.131:27017
+2022-06-10 19:11:24 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter checking username:test
+2022-06-10 19:11:24 [http-nio-8081-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 978334
+2022-06-10 19:11:24 [http-nio-8081-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 978386
+2022-06-10 19:11:24 [http-nio-8081-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 978435
+2022-06-10 19:11:24 [http-nio-8081-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 978499
+2022-06-10 19:11:24 [http-nio-8081-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, jdbcUrl : jdbc:mysql://192.168.1.109:3306/mall?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai, lastPacketReceivedIdleMillis : 978546
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsMemberMapper.selectByExample ==>  Preparing: select id, member_level_id, username, password, nickname, phone, status, create_time, icon, gender, birthday, city, job, personalized_signature, source_type, integration, growth, luckey_count, history_integration from ums_member WHERE ( username = ? )
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsMemberMapper.selectByExample ==> Parameters: test(String)
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsMemberMapper.selectByExample <==      Total: 1
+2022-06-10 19:11:24 [http-nio-8081-exec-2] INFO  com.dxl.mall.security.component.JwtAuthenticationTokenFilter authenticated user:test
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.OmsCartItemMapper.selectByExample ==>  Preparing: select id, product_id, product_sku_id, member_id, quantity, price, product_pic, product_name, product_sub_title, product_sku_code, member_nickname, create_date, modify_date, delete_status, product_category_id, product_brand, product_sn, product_attr from oms_cart_item WHERE ( delete_status = ? and member_id = ? )
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.OmsCartItemMapper.selectByExample ==> Parameters: 0(Integer), 1(Long)
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.OmsCartItemMapper.selectByExample <==      Total: 4
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.portal.dao.PortalProductDao.getPromotionProductList ==>  Preparing: SELECT p.id, p.`name`, p.promotion_type, p.gift_growth, p.gift_point, sku.id sku_id, sku.price sku_price, sku.sku_code sku_sku_code, sku.promotion_price sku_promotion_price, sku.stock sku_stock, sku.lock_stock sku_lock_stock, ladder.id ladder_id, ladder.count ladder_count, ladder.discount ladder_discount, full_re.id full_id, full_re.full_price full_full_price, full_re.reduce_price full_reduce_price FROM pms_product p LEFT JOIN pms_sku_stock sku ON p.id = sku.product_id LEFT JOIN pms_product_ladder ladder ON p.id = ladder.product_id LEFT JOIN pms_product_full_reduction full_re ON p.id = full_re.product_id WHERE p.id IN ( ? , ? , ? , ? )
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.portal.dao.PortalProductDao.getPromotionProductList ==> Parameters: 29(Long), 36(Long), 36(Long), 36(Long)
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.portal.dao.PortalProductDao.getPromotionProductList <==      Total: 12
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsMemberReceiveAddressMapper.selectByExample ==>  Preparing: select id, member_id, name, phone_number, default_status, post_code, province, city, region, detail_address from ums_member_receive_address WHERE ( member_id = ? )
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsMemberReceiveAddressMapper.selectByExample ==> Parameters: 1(Long)
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsMemberReceiveAddressMapper.selectByExample <==      Total: 3
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.portal.dao.SmsCouponHistoryDao.getDetailList ==>  Preparing: SELECT ch.*, c.id c_id, c.name c_name, c.amount c_amount, c.min_point c_min_point, c.platform c_platform, c.start_time c_start_time, c.end_time c_end_time, c.note c_note, c.use_type c_use_type, c.type c_type, cpr.id cpr_id,cpr.product_id cpr_product_id, cpcr.id cpcr_id,cpcr.product_category_id cpcr_product_category_id FROM sms_coupon_history ch LEFT JOIN sms_coupon c ON ch.coupon_id = c.id LEFT JOIN sms_coupon_product_relation cpr ON cpr.coupon_id = c.id LEFT JOIN sms_coupon_product_category_relation cpcr ON cpcr.coupon_id = c.id WHERE ch.member_id = ? AND ch.use_status = 0
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.portal.dao.SmsCouponHistoryDao.getDetailList ==> Parameters: 1(Long)
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.portal.dao.SmsCouponHistoryDao.getDetailList <==      Total: 3
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsIntegrationConsumeSettingMapper.selectByPrimaryKey ==>  Preparing: select id, deduction_per_amount, max_percent_per_order, use_unit, coupon_status from ums_integration_consume_setting where id = ?
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsIntegrationConsumeSettingMapper.selectByPrimaryKey ==> Parameters: 1(Long)
+2022-06-10 19:11:24 [http-nio-8081-exec-2] DEBUG com.dxl.mall.mapper.UmsIntegrationConsumeSettingMapper.selectByPrimaryKey <==      Total: 1
+2022-06-10 19:11:24 [http-nio-8081-exec-2] INFO  com.dxl.mall.common.log.WebLogAspect {"method":"POST","ip":"0:0:0:0:0:0:0:1","description":"根据购物车信息生成确认单","uri":"/order/generateConfirmOrder","url":"http://localhost:8081/order/generateConfirmOrder","result":{"code":200,"data":{"cartPromotionItemList":[{"productSkuCode":"201808270029001","productSkuId":106,"quantity":1,"productId":29,"reduceAmount":0,"productSubTitle":"【限时限量抢购】Apple产品年中狂欢节，好物尽享，美在智慧！速来 >> 勾选[保障服务][原厂保2年]，获得AppleCare+全方位服务计划，原厂延保售后无忧。","productName":"Apple iPhone 8 Plus","productCategoryId":19,"promotionMessage":"无优惠","price":5499,"deleteStatus":0,"realStock":107,"integration":5499,"growth":5499,"id":16,"memberNickname":"windir","memberId":1,"createDate":1535424650000},{"productSkuCode":"202002210036001","productSkuId":163,"quantity":3,"productId":36,"productSn":"6799345","productPic":"http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/images/20180615/5b19403eN9f0b3cb8.jpg","productBrand":"NIKE","reduceAmount":0,"productSubTitle":"耐克NIKE 男子 气垫 休闲鞋 AIR MAX 90 ESSENTIAL 运动鞋 AJ1285-101白色41码","productName":"耐克NIKE 男子 气垫 休闲鞋 AIR MAX 90 ESSENTIAL 运动鞋 AJ1285-101白色41码","productAttr":"[{\"key\":\"颜色\",\"value\":\"红色\"},{\"key\":\"尺寸\",\"value\":\"38\"},{\"key\":\"风格\",\"value\":\"秋季\"}]","productCategoryId":29,"promotionMessage":"无优惠","price":100,"deleteStatus":0,"realStock":100,"integration":0,"growth":0,"id":19,"memberNickname":"windir","memberId":1,"createDate":1582617119000},{"productSkuCode":"202002210036001","productSkuId":164,"quantity":2,"productId":36,"productSn":"6799345","productPic":"http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/images/20180615/5b19403eN9f0b3cb8.jpg","productBrand":"NIKE","reduceAmount":0,"productSubTitle":"耐克NIKE 男子 气垫 休闲鞋 AIR MAX 90 ESSENTIAL 运动鞋 AJ1285-101白色41码","productName":"耐克NIKE 男子 气垫 休闲鞋 AIR MAX 90 ESSENTIAL 运动鞋 AJ1285-101白色41码","productAttr":"[{\"key\":\"颜色\",\"value\":\"红色\"},{\"key\":\"尺寸\",\"value\":\"38\"},{\"key\":\"风格\",\"value\":\"夏季\"}]","productCategoryId":29,"promotionMessage":"无优惠","price":120,"deleteStatus":0,"realStock":98,"integration":0,"growth":0,"id":20,"memberNickname":"windir","memberId":1,"createDate":1582617263000},{"productSkuCode":"202002210036001","productSkuId":164,"quantity":2,"productId":36,"productSn":"6799345","productPic":"http://macro-oss.oss-cn-shenzhen.aliyuncs.com/mall/images/20180615/5b19403eN9f0b3cb8.jpg","productBrand":"NIKE","reduceAmount":0,"productSubTitle":"耐克NIKE 男子 气垫 休闲鞋 AIR MAX 90 ESSENTIAL 运动鞋 AJ1285-101白色41码","productName":"耐克NIKE 男子 气垫 休闲鞋 AIR MAX 90 ESSENTIAL 运动鞋 AJ1285-101白色41码","productAttr":"[{\"key\":\"颜色\",\"value\":\"红色\"},{\"key\":\"尺寸\",\"value\":\"38\"},{\"key\":\"风格\",\"value\":\"夏季\"}]","productCategoryId":29,"promotionMessage":"无优惠","price":120,"deleteStatus":0,"realStock":98,"integration":0,"growth":0,"id":21,"memberNickname":"windir","memberId":1,"createDate":1582620593000}],"memberReceiveAddressList":[{"city":"深圳市","defaultStatus":0,"phoneNumber":"18033441849","province":"广东省","name":"大梨","detailAddress":"科兴科学园","postCode":"518000","id":1,"region":"南山区","memberId":1},{"city":"深圳市","defaultStatus":0,"phoneNumber":"18033441849","province":"广东省","name":"大梨","detailAddress":"清水河街道","postCode":"518000","id":3,"region":"福田区","memberId":1},{"city":"深圳市","defaultStatus":1,"phoneNumber":"18033441849","province":"广东省","name":"大梨","detailAddress":"东晓街道","postCode":"518000","id":4,"region":"福田区","memberId":1}],"memberIntegration":5000,"integrationConsumeSetting":{"useUnit":100,"deductionPerAmount":100,"couponStatus":1,"id":1,"maxPercentPerOrder":50},"calcAmount":{"freightAmount":0,"totalAmount":6279,"payAmount":6279,"promotionAmount":0},"couponHistoryDetailList":[]},"message":"操作成功"},"basePath":"http://localhost:8081","parameter":[12,13,14,15,16,19,20,21],"startTime":1654859484313,"username":"test","spendTime":101}
