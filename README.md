@@ -31,7 +31,9 @@
 ### hdu_shop后台系统
 
 项目演示地址: https://gitee.com/lxz1234/hdu-mall
+
 (动图可能看不了,请点击上方链接查看)
+
 <img src="D:\webProject\mall\项目文档\backend1.gif" alt="backend1" style="zoom:200%;" />
 
 
@@ -43,7 +45,9 @@
 ### 前台商城系统
 
 项目演示地址: https://gitee.com/lxz1234/hdu-mall
+
 (动图可能看不了,请点击上方链接查看)
+
 <img src="D:\webProject\mall\项目文档\front1.gif" alt="front1" style="zoom:200%;" />
 
 
